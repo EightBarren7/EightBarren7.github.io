@@ -1,0 +1,86 @@
+.top_banner .img_link{
+    width: 761px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.top_banner .img_link img{
+    width: 761px;
+    height: 350px;
+}
+.intro{
+    padding: 14px 40px 0 40px;
+    width: 259px;
+    height: 336px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    float: right;
+}
+.intro .i_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro .i_top span{
+    font-size: 22px;
+    color: #333;
+}
+.intro .i_top a{
+    cursor: pointer;
+    display: inline-block;
+    width: 22%;
+    margin-right: -20px;
+    font-size: 12px;
+    color: #999;
+}
+.intro .eng{
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 2px;
+    color: #999;
+    padding: 0;
+}
+.intro .why{
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.intro .info{
+    font-size: 15px;
+    color: #666;
+    padding-top: 15px;
+    line-height: 24px;
+}
+.wrapper{
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: #fff;
+}
+.wrapper h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 48px;
+}
+.item{
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    display: flex;
+}
+.item_box .title{
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.items_detail{display: flex;align-items: center;padding: 0 30px;}
+.items_detail button{width:100px;padding: 4px 10px;}
+.items_detail .i_left{flex:1;margin-top: 20px;margin-right: 20px;color: #666;}
