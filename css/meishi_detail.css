@@ -1,0 +1,307 @@
+.top_banner .img_link {
+    width: 761px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top_banner .img_link img {
+    width: 761px;
+    height: 350px;
+}
+
+.intro {
+    padding: 14px 40px 0 40px;
+    width: 259px;
+    height: 336px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    float: right;
+}
+
+.intro .i_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .i_top span {
+    font-size: 22px;
+    color: #333;
+}
+
+.intro .i_top a {
+    cursor: pointer;
+    display: inline-block;
+    width: 22%;
+    margin-right: -20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.intro .eng {
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 2px;
+    color: #999;
+    padding: 0;
+}
+
+.intro .recommend {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.intro .origin_area {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.intro .origin_area .text {
+    float: left;
+}
+
+.intro .origin_area .area {
+    float: right;
+}
+
+.intro .recommend .recommendtext {
+    float: left;
+}
+
+.intro .recommend .starbox {
+    /*background: url("../img/star.jpg") repeat-x;*/
+    float: right;
+}
+
+.intro .why {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.intro .info {
+    font-size: 15px;
+    color: #666;
+    padding-top: 15px;
+    line-height: 24px;
+}
+
+.wrapper {
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: #fff;
+}
+
+.wrapper h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.item {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    display: flex;
+}
+
+.item_box .title {
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.items_detail {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.items_detail button {
+    width: 100px;
+    padding: 4px 10px;
+}
+
+.items_detail .i_left {
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #666;
+}
+
+.items_detail .introduction {
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #666;
+    text-indent: 2em;
+}
+
+.particulars {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 0 0 10px 0;
+    margin: 0 0 15px 0;
+}
+
+.particulars legend {
+    font-size: 16px;
+    margin: 0 35px;
+    padding: 0 10px;
+}
+
+.recipeCategory_sub_R {
+    width: 100%;
+}
+
+.particulars .recipeCategory_sub_R ul {
+    border: none;
+}
+
+.recipeCategory_sub_R ul {
+    display: block;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.recipeCategory_sub_R li {
+    float: left;
+    width: 159px;
+    text-align: center;
+    height: 70px;
+    position: relative;
+}
+
+.recipeCategory_sub_R li .category_s1 {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #666;
+}
+
+.recipeCategory_sub_R li .category_s1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+}
+
+.recipeCategory_sub_R li .category_s2 {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.clear {
+    zoom: 1;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+
+.mo {
+    font-size: 20px;
+    color: #ff6767;
+    margin-top: 20px;
+    line-height: 20px;
+    padding: 20px 0 20px 25px;
+    background: rgba(0,0,0,0) url(//static.meishichina.com/v6/img/mo.png) no-repeat scroll left center;
+}
+
+.recipeStep li {
+    display: block;
+    margin: 0 0 40px 0;
+}
+
+.recipeStep li .recipeStep_word {
+    position: relative;
+    width: 550px;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.recipeStep_num {
+    border: 1px solid #ddd;
+    color: #999;
+    border-radius: 51%;
+    font-size: 16px;
+    height: 28px;
+    left: 0;
+    line-height: 31px;
+    position: relative;
+    text-align: center;
+    width: 28px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.recipeStep li .recipeStep_img {
+    width: 240px;
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+}
