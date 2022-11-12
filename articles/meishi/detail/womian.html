@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Document</title>
+    <title>东阳沃面</title>
     <link rel="stylesheet" href="../../../css/common.css">
     <link rel="stylesheet" href="../../../css/meishi_detail.css">
 </head>
@@ -29,7 +29,7 @@
                     </a>
                     &nbsp;>&nbsp;
                     <a href="../meishi.html">
-                        特产大全
+                        本地美食
                     </a>
                     &nbsp;>&nbsp;
                     <a href="./womian.html">
@@ -177,7 +177,7 @@
                                     </li>
                                     <li>
 							            <span class="category_s1">
-                                            15分钟
+                                            廿分钟
                                         </span>
                                         <span class="category_s2">耗时</span>
                                     </li>
@@ -224,7 +224,10 @@
             <div class="item">
                 <img src="../../../img/beizhenlou.jpg" alt="">
                 <div class="item_box">
-                    <p class="title">北镇楼沃面店</p>
+                    <p class="title">
+                        北镇楼沃面店
+                        <a href="https://surl.amap.com/mepOhWZfXZ" target="_blank" class="daohang">到这去</a>
+                    </p>
                     <div class="items_detail">
                         <div class="i_left">
                             东阳的老字号店，古老口味较好的一家地道本地面馆，袄面是一流的。来吃面的人当中老年客人占到一定的比例。
@@ -234,6 +237,46 @@
                 </div>
             </div>
         </div>
+        <div class="wrapper">
+            <h2>评论区</h2>
+            <div class="viewsubmit">
+                <label for="">
+                    <textarea placeholder="请输入评论"></textarea>
+                </label>
+                <br>
+                <button>发布</button>
+            </div>
+            <div class="view">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <script>
+            // 1. 获取元素
+            var textarea = document.querySelector('.viewsubmit textarea');
+            var button = document.querySelector('.viewsubmit button');
+            var ul = document.querySelector('.view ul');
+            // 2.注册事件
+            button.onclick = function() {
+                if (textarea.value === '') {
+                    alert('您没输入内容');
+                } else {
+                    // 3.创建元素
+                    var li = document.createElement('li');
+                    li.innerHTML = textarea.value + '<a href = "javascript:;">删除</a>';
+                    // 4.添加元素
+                    ul.insertBefore(li, ul.children[0]);
+                    // 5.删除元素
+                    var a = document.querySelectorAll('a');
+                    for (var i = 0; i < a.length; i++) {
+                        a[i].onclick = function() {
+                            ul.removeChild(this.parentNode);
+                        }
+                    }
+                }
+            }
+        </script>
     </div>
 </div>
 </body>

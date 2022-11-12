@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增美食</title>
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+<div class="content">
+    <form class="add_form" method="post">
+        <div class="header_index">
+            <h2>头部简介</h2>
+            美食名称：
+            <label>
+                <input type="text" placeholder="请输入美食名称">
+            </label>
+            <br>
+            英文名称：
+            <label>
+                <input type="text" placeholder="请输入美食英文名称">
+            </label>
+            <br>
+            推荐指数：
+            <label>
+                一星<input type="radio" name="star" value="one">
+            </label>
+            <label>
+                两星<input type="radio" name="star" value="two">
+            </label>
+            <label>
+                三星<input type="radio" name="star" value="three">
+            </label>
+            <label>
+                四星<input type="radio" name="star" value="four">
+            </label>
+            <label>
+                五星<input type="radio" name="star" value="five" checked="checked">
+            </label>
+            <br>
+            推荐理由：
+            <label>
+                <textarea cols="30" rows="2" placeholder="请输入美食的推荐理由"></textarea>
+            </label>
+            <br>
+            发源地：
+            <label>
+                <select>
+                    <option value="东阳市" selected="selected">东阳市</option>
+                </select>
+                <select>
+                    <option value="请选择" selected="selected">--请选择--</option>
+                    吴宁街道
+                    <option value="吴宁街道">吴宁街道</option>
+                    南市街道
+                    <option value="南市街道">南市街道</option>
+                    白云街道
+                    <option value="白云街道">白云街道</option>
+                    江北街道
+                    <option value="江北街道">江北街道</option>
+                    城东街道
+                    <option value="城东街道">城东街道</option>
+                    六石街道
+                    <option value="六石街道">六石街道</option>
+                    歌山镇
+                    <option value="歌山镇">歌山镇</option>
+                    巍山镇
+                    <option value="巍山镇">巍山镇</option>
+                    虎鹿镇
+                    <option value="虎鹿镇">虎鹿镇</option>
+                    佐村镇
+                    <option value="佐村镇">佐村镇</option>
+                    三单乡
+                    <option value="三单乡">三单乡</option>
+                    东阳江镇
+                    <option value="东阳江镇">东阳江镇</option>
+                    湖溪镇
+                    <option value="湖溪镇">湖溪镇</option>
+                    横店镇
+                    <option value="横店镇">横店镇</option>
+                    马宅镇
+                    <option value="马宅镇">马宅镇</option>
+                    千祥镇
+                    <option value="千祥镇">千祥镇</option>
+                    南马镇
+                    <option value="南马镇">南马镇</option>
+                    画水镇
+                    <option value="画水镇">画水镇</option>
+                </select>
+                <input type="text" placeholder="输入具体村、镇或乡">
+            </label>
+            <br>
+            美食图片：
+            <label>
+                <input type="file">
+            </label>
+        </div>
+        <div class="food_introduction">
+            <h2>美食介绍</h2>
+            美食介绍：
+            <label>
+                <textarea cols="30" rows="2" placeholder="请输入美食的介绍"></textarea>
+            </label>
+            <br>
+            介绍图片：
+            <label>
+                <input type="file">
+            </label>
+        </div>
+        <div class="food_make">
+            <h2>美食制作</h2>
+            制作难度：
+            <label>
+                简单<input type="radio" name="difficulty" value="easy">
+            </label>
+            <label>
+                初级<input type="radio" name="difficulty" value="primary">
+            </label>
+            <label>
+                中级<input type="radio" name="difficulty" value="middle">
+            </label>
+            <label>
+                高级<input type="radio" name="difficulty" value="hard">
+            </label>
+            <br>
+            需要时间：
+            <label>
+                十分钟<input type="radio" name="time_cost" value="1">
+            </label>
+            <label>
+                廿分钟<input type="radio" name="time_cost" value="2">
+            </label>
+            <label>
+                半小时<input type="radio" name="time_cost" value="3">
+            </label>
+            <label>
+                三刻钟<input type="radio" name="time_cost" value="4">
+            </label>
+            <label>
+                一小时<input type="radio" name="time_cost" value="5">
+            </label>
+            <label>
+                数小时<input type="radio" name="time_cost" value="6">
+            </label>
+            <label>
+                一天<input type="radio" name="time_cost" value="7">
+            </label>
+            <label>
+                数天<input type="radio" name="time_cost" value="8">
+            </label>
+            <br>
+            口味：
+            <input type="text">
+            <br>
+            食材：
+            <blockquote>
+                <p><span>主料</span><button class="main_add" type="button">添加食材</button><a href="javascript:void(0);" title="修改食材组名" class="edit"></a></p>
+                <div class="J_addDiv">
+                    <input type="text"  class="liao"  placeholder="食材名" autocomplete="off">
+                    <input type="text"  class="yongliang" placeholder="用量" autocomplete="off">
+                </div>
+                <script>
+                    var btn1 = document.querySelector('.main_add');
+                    btn1.onclick = function(){
+                        var div = document.createElement('div');
+                        div.innerHTML = '<input type="text"  class="liao"  placeholder="食材名" autocomplete="off">' + ' ' +
+                                        '<input type="text"  class="yongliang" placeholder="用量" autocomplete="off">' + ' ' +
+                                        '<a class="a1" href = "javascript:;">删除</a>';
+                        document.querySelector('.main_add').parentNode.parentNode.appendChild(div);
+                        var a = document.querySelectorAll('.a1');
+                        for(var i = 0; i < a.length; i++){
+                            a[i].onclick = function(){
+                                this.parentNode.parentNode.removeChild(this.parentNode);
+                            }
+                        }
+                    }
+                </script>
+            </blockquote>
+            <blockquote>
+                <p><span>辅料</span><button class="second_add" type="button">添加食材</button><a href="javascript:void(0);" title="修改食材组名" class="edit"></a>
+                </p>
+                <div class="J_addDiv">
+                    <input type="text"  class="liao"  placeholder="食材名" autocomplete="off">
+                    <input type="text"  class="yongliang" placeholder="用量" autocomplete="off">
+                </div>
+                <script>
+                    var btn2 = document.querySelector('.second_add');
+                    btn2.onclick = function(){
+                        var div = document.createElement('div');
+                        div.innerHTML = '<input type="text"  class="liao"  placeholder="食材名" autocomplete="off">' + ' ' +
+                                        '<input type="text"  class="yongliang" placeholder="用量" autocomplete="off">' + ' ' +
+                                        '<a class="a2" href = "javascript:;">删除</a>';
+                        document.querySelector('.second_add').parentNode.parentNode.appendChild(div);
+                        var a = document.querySelectorAll('.a2');
+                        for(var i = 0; i < a.length; i++){
+                            a[i].onclick = function(){
+                                this.parentNode.parentNode.removeChild(this.parentNode);
+                            }
+                        }
+                    }
+                </script>
+            </blockquote>
+            <blockquote>
+                <p><span>调料</span><button class="other_add" type="button">添加食材</button><a href="javascript:void(0);" title="修改食材组名" class="edit"></a><a href="javascript:void(0);" title="删除食材组" class="del"></a></p>
+                <div class="J_addDiv">
+                    <input type="text"  class="liao"  placeholder="食材名" autocomplete="off">
+                    <input type="text"  class="yongliang" placeholder="用量" autocomplete="off">
+                </div>
+                <script>
+                    var btn3 = document.querySelector('.other_add');
+                    btn3.onclick = function(){
+                        var div = document.createElement('div');
+                        div.innerHTML = '<input type="text"  class="liao"  placeholder="食材名" autocomplete="off">' + ' ' +
+                                        '<input type="text"  class="yongliang" placeholder="用量" autocomplete="off">' + ' ' +
+                                        '<a class="a3" href = "javascript:;">删除</a>';
+                        document.querySelector('.other_add').parentNode.parentNode.appendChild(div);
+                        var a = document.querySelectorAll('.a3');
+                        for(var i = 0; i < a.length; i++){
+                            a[i].onclick = function(){
+                                this.parentNode.parentNode.removeChild(this.parentNode);
+                            }
+                        }
+                    }
+                </script>
+            </blockquote>
+            制作过程：
+            <div class="make_steps">
+                <button class="add_step" type="button">添加步骤</button>
+                <div class="step">
+                    <h4>步骤1</h4>
+                    <textArea class="textArea J_input" name="note" placeholder="请输入步骤1" maxlength="200"></textArea>
+                </div>
+            </div>
+            <script>
+                var btn4 = document.querySelector('.add_step');
+                btn4.onclick = function(){
+                    var div = document.createElement('div');
+                    console.log(btn4.parentNode);
+                    div.innerHTML = '<h4>步骤' + (btn4.parentNode.children.length) + '</h4>' + ' ' +
+                        ('<textArea class="textArea J_input" name="note" placeholder="请输入步骤') + (btn4.parentNode.children.length) + ('" maxlength="200"></textArea>') + ' ' +
+                        '<a class="a4" href = "javascript:;">删除</a>';
+                    document.querySelector('.add_step').parentNode.appendChild(div);
+                    var a = document.querySelectorAll('.a4');
+                    for(var i = 0; i < a.length; i++){
+                        a[i].onclick = function(){
+                            this.parentNode.parentNode.removeChild(this.parentNode);
+                            for(var i = 1; i < btn4.parentNode.children.length; i++){
+                                // console.log(btn4.parentNode.children[i]);
+                                btn4.parentNode.children[i].children[0].innerHTML = '步骤' + i;
+                                btn4.parentNode.children[i].children[1].placeholder = '请输入步骤' + i;
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <div class="recommend_shop">
+            <h2>推荐餐厅</h2>
+            <button class="add_shop" type="button">添加餐厅</button>
+            <div class="food_shop">
+                <h3>餐厅1</h3>
+                餐厅名称：
+                <label>
+                    <input type="text" placeholder="请输入餐厅名称">
+                </label>
+                <br>
+                餐厅介绍：
+                <label>
+                    <input type="text" placeholder="请输入餐厅介绍">
+                </label>
+                <br>
+                餐厅地址：
+                <label>
+                    <input type="text" placeholder="请输入高德地图中餐厅地址的链接">
+                </label>
+                <br>
+                餐厅评价：
+                <label>
+                    <input type="text" placeholder="请输入0-5之间的一位小数">
+                </label>
+                <br>
+                餐厅图片：
+                <label>
+                    <input type="file">
+                </label>
+            </div>
+        </div>
+        <script>
+            var btn5 = document.querySelector('.add_shop');
+            btn5.onclick = function(){
+                var div = document.createElement('div');
+                div.innerHTML = '<h3>餐厅' + (btn5.parentNode.children.length - 1) + '</h3>' + ' ' +
+                    '餐厅名称：' + ' ' +
+                    '<label>' + ' ' +
+                    '<input type="text" placeholder="请输入餐厅名称">' + ' ' +
+                    '</label>' + ' ' +
+                    '<br>' + ' ' +
+                    '餐厅介绍：' + ' ' +
+                    '<label>' + ' ' +
+                    '<input type="text" placeholder="请输入餐厅介绍">' + ' ' +
+                    '</label>' + ' ' +
+                    '<br>' + ' ' +
+                    '餐厅地址：' + ' ' +
+                    '<label>' + ' ' +
+                    '<input type="text" placeholder="请输入高德地图中餐厅地址的链接">' + ' ' +
+                    '</label>' + ' ' +
+                    '<br>' + ' ' +
+                    '餐厅评价：' + ' ' +
+                    '<label>' + ' ' +
+                    '<input type="text" placeholder="请输入0-5之间的一位小数">' + ' ' +
+                    '</label>' + ' ' +
+                    '<br>' + ' ' +
+                    '餐厅图片：' + ' ' +
+                    '<label>' + ' ' +
+                    '<input type="file">' + ' ' +
+                    '</label>' + ' ' +
+                    '<a class="a5" href = "javascript:;">删除</a>';
+                document.querySelector('.add_shop').parentNode.appendChild(div);
+                var a = document.querySelectorAll('.a5');
+                for(var i = 0; i < a.length; i++){
+                    a[i].onclick = function(){
+                        this.parentNode.parentNode.removeChild(this.parentNode);
+                        for(var i = 2; i < btn5.parentNode.children.length; i++){
+                            btn5.parentNode.children[i].children[0].innerHTML = '餐厅' + (i-1);
+                        }
+                    }
+                }
+            }
+        </script>
+    </form>
+</div>
+</body>
+</html>
