@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 600px) {
+    .home_detail p {
+        font-weight: 900;
+    }
+    .body {
+        width: 100%;
+    }
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+a {
+    color: #07519A;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
+
+.content {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1100px;
+}
+
+header ul {
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header ul li {
+    list-style: none;
+    float: left;
+}
+
+header li a {
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+header li a:hover:not(.active) {
+    background-color: #555555;
+    color: white;
+}
+
+header li a.active {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+header li a:active {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+/* 首页 */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.out_box {
+    width: 800px;
+    height: 490px;
+    overflow: hidden;
+    float: left;
+}
+
+.out_box .box {
+    width: 2400px;
+    height: 490px;
+    animation: move 20s infinite
+}
+
+.out_box .box img {
+    width: 800px;
+    height: 490px;
+    float: left;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0)
+    }
+    30% {
+        transform: translateX(-800px)
+    }
+    60% {
+        transform: translateX(-1600px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.boxtext {
+    height: 490px;
+    overflow: hidden;
+    float: left;
+    background-image: url(../img/index/city1.png);
+}
+
+.boxtext p {
+    /*writing-mode: vertical-lr;*/
+    font-family: "阿里妈妈数黑体 Bold", serif !important;
+    height: 490px;
+    font-size: 20px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+@font-face {
+    font-family: "阿里妈妈数黑体 Bold";
+    font-weight: 700;
+    src: url("//at.alicdn.com/wf/webfont/CAOM21J9FMuj/wzzK4xS7cPbSOSznSCkCS.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/CAOM21J9FMuj/8B0Sy4F_eAg_FaAM5B2Hf.woff") format("woff");
+    font-display: swap;
+}
+
+.home_detail {
+    height: 437px;
+    /*background: url(../img/index/map.jpg) top center no-repeat;*/
+    background-size: auto;
+    position: relative;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.mapimg {
+    float: left;
+}
+
+.home_detail::before {
+    content: '';
+    filter: blur(2px);
+    background: inherit;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home_detail .text {
+    position: absolute;
+    top: 20px;
+}
+
+.home_detail h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.home_detail p {
+    text-indent: 2em;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+/* 详情页 */
+
+strong {
+    font-weight: bold;
+}
+
+.margin_top {
+    margin-top: 10px;
+}
+
+.f_title {
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #800F0F;
+    font-weight: bold;
+    float: left;
+    padding-top: 35px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #570B0B;
+    background: url(http://www.feizui.com/skin/default/images/title_bg.gif) repeat-x left bottom;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: top;
+    border-color: inherit;
+}
+
+td {
+    font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif, "宋体";
+    color: #333;
+}
+
+.techanbox {
+    border: 1px solid #AACCEE;
+    border-width: 0 1px 1px 1px;
+}
+
+.techanbox ul {
+    border-bottom: 1px dashed #ccc;
+    list-style: none;
+    padding: 8px;
+}
+
+.box ul li {
+    background: url(http://www.feizui.com/skin/default/images/bullet.gif) no-repeat left center;
+    line-height: 1.6;
+    padding: 2px 0 2px 8px;
+}
+
+.picText {
+    margin-bottom: 10px;
+    background: #F8F8F8;
+}
+
+.picText strong {
+    display: block;
+}
+
+.title {
+    background: #E9F2FB url(http://www.feizui.com/skin/default/images/title_bg.gif) repeat-x left top;
+    color: #07519A;
+    border: 1px solid #AACCEE;
+    border-bottom: none;
+}
+
+.title td {
+    font-size: 14px;
+    line-height: 26px;
+    color: #07519A;
+    padding: 0px 10px;
+}
+
+.more {
+    height: 40px;
+    float: right;
+    font-size: 12px;
+    line-height: 40px;
+    color: #222;
+    font-weight: normal;
+}
+
+.eng {
+    font-size: 14px;
+    color: #999;
+    padding-left: 5px;
+}
+
+.fa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa .f_box {
+    width: 48%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.fa .f_link {
+    width: 100%;
+    height: 240px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+}
+
+.fa .f_box img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.fa .f_box img:hover {
+    transform: scale(1.2);
+}
+
+.f_box p {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #d7cece;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 18px;
+}
+
+.eng a {
+    float: right;
+}
+
+/* 景观 */
+.addr_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left img {
+    width: 320px;
+    height: 160px;
+}
+
+.right {
+    text-align: right;
+}
+
+.right h3 {
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.right p {
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.right span {
+    color: #9195a3;
+}
+
+/* 名人 */
+.people {
+    border: 1px solid lightgrey;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.people .top {
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.people .top::before {
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 16px;
+    width: 5px;
+    background-color: #4e6ef2;
+}
+
+.people .content {
+    display: flex;
+}
+
+.people .content p {
+    margin: 24px 0;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.people .content img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+
+.delete {
+    float: right;
+}
+.delete1 {
+    float: right;
+}
