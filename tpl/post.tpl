@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>东阳沃面</title>
-    <link rel="stylesheet" href="../../../css/common.css">
-    <link rel="stylesheet" href="../../../css/meishi_detail.css">
-</head>
-<body>
+
+
 <div class="content">
     <header>
         <ul>
@@ -32,20 +22,20 @@
                         本地美食
                     </a>
                     &nbsp;>&nbsp;
-                    <a href="./womian.html">
-                        东阳沃面
+                    <a href="#">
+                        <%=form.food_name %>
                     </a>
                 </td>
             </tr>
         </table>
         <div class="top_banner">
-            <a href="#" class="img_link"><img src="../../../img/nooldes.jpg" alt=""></a>
+            <a href="#" class="img_link"><img src="../../../img/meishi2.jpeg" alt=""></a>
             <div class="intro">
                 <div class="i_top">
-                    <span>东阳沃面</span>
+                    <span><%=form.food_name %></span>
                     <a href="#">分享到</a>
                 </div>
-                <p class="eng">Noodle soup</p>
+                <p class="eng"><%=form.food_englishname %></p>
                 <div class="recommend clearfix">
                     <div class="recommendtext">推荐指数</div>
                     <div class="starbox">
@@ -58,31 +48,23 @@
                 </div>
                 <div class="why">推荐理由</div>
                 <div class="info">
-                    东阳特色沃面是浙江东阳地区汉族传统面食，热烫，味鲜，色彩丰富。在金华一带，宴请贵客时，主食常常喜欢点一碗东阳沃面。
+                    <%=form.recommend_reason %>
                 </div>
                 <div class="origin_area">
                     <div class="text">发源地</div>
-                    <div class="area">东阳市</div>
+                    <div class="area">东阳市 <%=form.fayuandi %></div>
                 </div>
             </div>
         </div>
         <div class="wrapper">
             <h2>美食介绍</h2>
             <div class="item">
-                <img src="../../../img/res.jpg" alt="">
+                <img src="../../../img/meishi3.jpg" alt="">
                 <div class="item_box">
                     <div class="items_detail">
                         <div class="introduction">
                             <p>
-                                早年在东阳民间，人们习惯把吃剩下的菜、汤用来煮面条，再用番薯淀粉制成糊面，既营养丰富，又易消化吸收。
-                                随着时代的变迁和经济的发展，食物也在悄然发生着变革。
-                                如今的东阳沃面，都经过厨师的精心烹作，食材自然也不再是原先的剩菜残汤。
-                                然而沃面自成一派的独特味道，却一直在人们口中留传，逐渐成为了一道款待亲友的美食。
-                            </p>
-                            <p>
-                                青菜的翠绿，河虾的嫩红，猪肚的奶白和木耳的纯黑，搭配个人喜好的肉丝等材料，色彩鲜艳，营养丰富。
-                                东阳沃面虽发端于穷苦灶头，但烹饪技法却活用了烩、汤、勾芡的原理，简直是化腐朽为神奇的典范。
-                                旧时的沃面体现了东阳人困苦时的勤俭，如今丰富的物质生活让我们怀念淳朴过去的同时，也更加珍惜当下的幸福味道。
+                                <%=form.food_introduction %>
                             </p>
                         </div>
                     </div>
@@ -104,9 +86,9 @@
                                     <ul>
                                         <li>
                                             <span class="category_s1">
-                                                碱水面
+                                                <%=form.zhuliao1 %>
                                             </span>
-                                            <span class="category_s2">300克</span>
+                                            <span class="category_s2"><%=form.zhuliao2 %></span>
                                         </li>
                                     </ul>
                                 </div>
@@ -117,34 +99,11 @@
                                     <ul>
                                         <li>
                                             <span class="category_s1">
-                                                青菜
+                                                <%=form.fuliao1 %>
                                             </span>
-                                            <span class="category_s2">适量</span>
+                                            <span class="category_s2"><%=form.fuliao2 %></span>
                                         </li>
-                                        <li>
-                                            <span class="category_s1">
-                                                猪肚
-                                            </span>
-                                            <span class="category_s2">适量</span>
-                                        </li>
-                                        <li>
-									        <span class="category_s1">
-                                                小虾
-                                            </span>
-                                            <span class="category_s2">20克</span>
-                                        </li>
-                                        <li>
-									        <span class="category_s1">
-                                                木耳
-                                            </span>
-                                            <span class="category_s2">适量</span>
-                                        </li>
-                                        <li>
-									        <span class="category_s1">
-                                                蛋丝
-                                            </span>
-                                            <span class="category_s2">适量</span>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </fieldset>
@@ -154,15 +113,9 @@
                                     <ul>
                                         <li>
                                             <span class="category_s1">
-                                                食用油
+                                                <%=form.tiaoliao1 %>
                                             </span>
-                                            <span class="category_s2">适量</span>
-                                        </li>
-                                        <li>
-                                            <span class="category_s1">
-                                                玉米粉
-                                            </span>
-                                            <span class="category_s2">适量</span>
+                                            <span class="category_s2"><%=form.tiaoliao2 %></span>
                                         </li>
                                     </ul>
                                 </div>
@@ -171,19 +124,19 @@
                                 <ul>
                                     <li>
 							            <span class="category_s1">
-                                            咸鲜
+                                            <%=form.kouwei %>
                                         </span>
                                         <span class="category_s2">口味</span>
                                     </li>
                                     <li>
 							            <span class="category_s1">
-                                            廿分钟
+                                            <%=form.cost_time %>
                                         </span>
                                         <span class="category_s2">耗时</span>
                                     </li>
                                     <li>
 							            <span class="category_s1">
-                                            简单
+                                            <%=form.difficulty %>
                                         </span>
                                         <span class="category_s2">难度</span>
                                     </li>
@@ -197,19 +150,7 @@
                                     <li>
                                         <div class="recipeStep_word">
                                             <div class="recipeStep_num">1</div>
-                                            准备食材
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="recipeStep_word">
-                                            <div class="recipeStep_num">2</div>
-                                            起好油锅，先炒肉丝、木耳，后将备好的河虾、肚丝、蛋丝和面条入锅煮开。“煮开”是东阳当地的口语，即“水滚”之意。
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="recipeStep_word">
-                                            <div class="recipeStep_num">3</div>
-                                            煮开之后，就可“沃”了——把精细的玉米粉（亦可稍稍加点番薯淀粉，以增加其黏稠度）用水和匀，舀几勺放到锅里，搅拌，煮开，即成“沃面”。
+                                            <%=form.buzhou1 %>
                                         </div>
                                     </li>
                                 </ul>
@@ -225,14 +166,14 @@
                 <img src="../../../img/beizhenlou.jpg" alt="">
                 <div class="item_box">
                     <p class="title">
-                        北镇楼沃面店
-                        <a href="https://surl.amap.com/mepOhWZfXZ" target="_blank" class="daohang">到这去</a>
+                        <%=form.canting1 %>
+                        <a href=<%=form.canting3 %> target="_blank" class="daohang">到这去</a>
                     </p>
                     <div class="items_detail">
                         <div class="i_left">
-                            东阳的老字号店，古老口味较好的一家地道本地面馆，袄面是一流的。来吃面的人当中老年客人占到一定的比例。
+                            <%=form.canting2 %>
                         </div>
-                        <button>4.8分</button>
+                        <button><%=form.canting4 %>分</button>
                     </div>
                 </div>
             </div>
@@ -279,5 +220,3 @@
         </script>
     </div>
 </div>
-</body>
-</html>

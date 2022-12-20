@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/ejs@3.1.6/ejs.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>美食</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="../../../css/meishi_detail.css">
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    var url = window.location.href
+    var id = url.split("id=")[1]
+    console.log(id)
+    var form = JSON.parse(localStorage.getItem("form"))
+    var formJson = {}
+    for(i=0; i<form.length; i++) {
+        if(form[i].id == id)
+        {
+            formJson.form = form[i]
+            $.get("../../../tpl/post.tpl", function (result) {
+                    var html = ejs.compile(result)(formJson)
+                    $("body").html(html)
+                }
+            )
+        }
+    }
+</script>

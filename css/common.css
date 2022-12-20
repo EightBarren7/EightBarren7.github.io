@@ -128,7 +128,7 @@ header li a:active {
 
 .boxtext p {
     /*writing-mode: vertical-lr;*/
-    font-family: "阿里妈妈数黑体 Bold" !important;
+    font-family: "阿里妈妈数黑体 Bold", serif !important;
     height: 490px;
     font-size: 20px;
     line-height: 60px;
@@ -411,4 +411,11 @@ td {
     width: 200px;
     height: 200px;
     margin: 30px;
+}
+
+.delete {
+    float: right;
+}
+.delete1 {
+    float: right;
 }
