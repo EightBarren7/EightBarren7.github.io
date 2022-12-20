@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="content">
-    <form class="add_form" method="post">
+    <form class="add_form" method="get">
         <div class="header_index">
             <h2>头部简介</h2>
             美食名称：
@@ -400,7 +400,7 @@
                 webJson.push(form)
 
                 localStorage.setItem("form", JSON.stringify(webJson))
-                window.location.href = "/view/articles/meishi/detail/test.html#id=" + form.id
+                window.location.href = "/articles/meishi/detail/test.html#id=" + form.id
             }
         </script>
         <input type="submit" value="提交" onclick="submitData()">
